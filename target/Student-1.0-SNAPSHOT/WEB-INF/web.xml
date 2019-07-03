@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app
+        PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+<servlet>
+    <servlet-name>saveRecord</servlet-name>
+    <servlet-class>decipher.SaveRecords</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>saveRecord</servlet-name>
+    <url-pattern>/SaveServlet</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>EditRecords</servlet-name>
+    <servlet-class>decipher.EditRecords</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>EditRecords</servlet-name>
+    <url-pattern>/EditServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UpdateRecords</servlet-name>
+    <servlet-class>decipher.UpdateRecords</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>UpdateRecords</servlet-name>
+    <url-pattern>/EditServlet2</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>deleteRecords</servlet-name>
+    <servlet-class>decipher.DeleteRecords</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>deleteRecords</servlet-name>
+    <url-pattern>/DeleteServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>viewRecords</servlet-name>
+    <servlet-class>decipher.ViewRecords</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>viewRecords</servlet-name>
+    <url-pattern>/ViewServlet</url-pattern>
+  </servlet-mapping>
+
+</web-app>
